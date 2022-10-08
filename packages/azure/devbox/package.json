@@ -1,6 +1,6 @@
 {
   "name": "devbox-azure",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "",
   "scripts": {
     "docker:build": "docker build -t asaker/devbox-azure:$npm_package_version ."
