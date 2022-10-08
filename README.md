@@ -34,3 +34,17 @@ npx lerna run build docker:build:devbox-gcp
 ```bash
 npx lerna run build docker:build:devbox-aws
 ```
+
+## Semantic Versionning
+
+This project uses conventional commits conventions. 
+Those conventions allow for  automatic CHANGELOG.md file generation.
+The following command will:
+ - ask for the new versions of the touched packages
+ - update package.json accordingly
+ - tag repository accordingly
+ - write changes to CHANGELOG.md file
+
+```bash
+npx lerna version  --conventional-commits --changelog-preset conventionalcommits
+```
