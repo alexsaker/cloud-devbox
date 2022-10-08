@@ -6,7 +6,8 @@
     "packages/**"
   ],
   "scripts": {
-    "commit": "cz"
+    "commit": "cz",
+    "version": "lerna version  --conventional-commits --changelog-preset conventionalcommits"
   },
   "devDependencies": {
     "commitizen": "^4.2.5",

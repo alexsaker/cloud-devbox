@@ -46,5 +46,5 @@ The following command will:
  - write changes to CHANGELOG.md file
 
 ```bash
-npx lerna version  --conventional-commits --changelog-preset conventionalcommits
+npm run version
 ```
