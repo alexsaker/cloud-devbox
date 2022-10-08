@@ -1,11 +1,16 @@
 {
   "name": "devbox-azure",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "",
   "scripts": {
     "docker:build": "docker build -t asaker/devbox-azure:$npm_package_version ."
   },
-   "keywords": ["gcp","docker","iac","terraform"],
+  "keywords": [
+    "gcp",
+    "docker",
+    "iac",
+    "terraform"
+  ],
   "author": "Alexandre SAKER <saker.alexandre@gmail.com>",
   "license": "MIT"
 }
