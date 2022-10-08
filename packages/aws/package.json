@@ -1,6 +1,6 @@
 {
   "name": "devbox-aws",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "",
   "scripts": {
     "docker:build": "docker build -t asaker/devbox-aws:$npm_package_version ."
