@@ -1,9 +1,10 @@
 {
-  "name": "devbox-aws",
+  "name": "basic-devbox-aws",
   "version": "0.2.1",
   "description": "",
   "scripts": {
-    "docker:build": "docker build -t asaker/devbox-aws:$npm_package_version ."
+    "docker:build": "docker build -t asaker/$npm_package_name:$npm_package_version .",
+    "docker:run": "docker run -it asaker/$npm_package_name:$npm_package_version /bin/bash"
   },
   "keywords": [
     "gcp",
