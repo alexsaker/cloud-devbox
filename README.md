@@ -11,31 +11,20 @@ using the Nx framework.
 npm install
 ```
 
-## Build All Devboxes
+## Global commands
+
+### Build All Devboxes
 
 ```bash
-npx lerna run build docker:build
+npx lerna run docker:build
 ```
-
-## Build Azure Devbox
+### Commit Code
 
 ```bash
-npx lerna run build docker:build:devbox-azure
+npm run commit
 ```
 
-## Build GCP Devbox
-
-```bash
-npx lerna run build docker:build:devbox-gcp
-```
-
-## Build AWS Devbox
-
-```bash
-npx lerna run build docker:build:devbox-aws
-```
-
-## Semantic Versionning
+### Semantic Versionning
 
 This project uses conventional commits conventions. 
 Those conventions allow for  automatic CHANGELOG.md file generation.
@@ -47,4 +36,54 @@ The following command will:
 
 ```bash
 npm run version
+```
+
+## Azure Devbox
+
+### Basic Devbox
+
+#### Build Image
+
+```bash
+npx lerna run docker:build --scope basic-devbox-azure
+```
+
+#### Run Image
+
+```bash
+npx lerna run docker:run --scope basic-devbox-azure
+```
+
+
+## GCP Devbox
+
+### Basic Devbox
+
+#### Build Image
+
+```bash
+npx lerna run docker:build --scope basic-devbox-gcp
+```
+
+#### Run Image
+
+```bash
+npx lerna run docker:run --scope basic-devbox-gcp
+```
+
+
+## AWS Devbox
+
+### Basic Devbox
+
+#### Build Image
+
+```bash
+npx lerna run docker:build --scope basic-devbox-aws
+```
+
+#### Run Image
+
+```bash
+npx lerna run docker:run --scope basic-devbox-aws
 ```
